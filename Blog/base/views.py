@@ -11,7 +11,13 @@ from .serializers import ArticalSerializer
 
 @api_view(['GET'])
 def getRoutes(req):
-    return Response('This is Blog BackEnd to go to database api/blog')
+    return Response(
+        ['This is Blog BackEnd: ',
+        'admin_page: admin',
+        'database: api/blog',
+        'username: hadi',
+        'password: 123456']
+    )
 
 @api_view(['GET'])
 def getBlog(req):
